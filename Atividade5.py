@@ -39,4 +39,23 @@ def preco_final():
     calculo_desconto = (preco_produto * (porcentagem_desconto/100))
     preco_desconto = preco_produto - calculo_desconto
     print (f"Após o desconto de {porcentagem_desconto}% o preço final será de R${preco_desconto:,.2f}.")
-preco_final()
+#preco_final()
+
+#Dias vividos
+def vida():
+    from datetime import date
+    hoje = date.today()
+    
+    try:
+        entrada1 = int(input("Insira seu ano de nascimento: "))
+        y = entrada1
+        entrada2 = int(input("Insira seu mês de nascimento (ex: Janeiro = 1): "))
+        m =entrada2
+        entrada3 = int(input("Insira o dia me que nascestes: "))
+        d = entrada3
+        nascimento = date(y,m,d)
+    except ValueError:
+        print("Insira apenas números inteiros.")
+    dias = hoje - nascimento
+    print(f"Você está vivo a {dias}.")
+vida()
