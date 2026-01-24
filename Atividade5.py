@@ -25,7 +25,7 @@ def palindromo():
     except ValueError:
         print("Insira uma palavra.")
     print(f"A palavra {palavra} {resposta} um palíndromo.")
-#palindromo()
+palindromo()
 
 #Preço final após desconto
 def preco_final():
@@ -58,4 +58,4 @@ def vida():
         print("Insira apenas números inteiros.")
     dias = hoje - nascimento
     print(f"Você está vivo a {dias}.")
-vida()
+#vida()
